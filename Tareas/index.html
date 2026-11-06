@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+
+    <head>
+        <!-- Información para el navegador -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Gatos y perros</title>
+        <meta name="author" content="Fernanda Diez">
+        <meta name="description" content="Mi primer sitio en HTML, CSS y JavaScript sobre gatos y perros">
+
+        <!-- Tipografía de Google Fonts (va antes de mi CSS) -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Mi hoja de estilos -->
+        <link rel="stylesheet" href="estilo.css" />
+    </head>
+
+    <body>
+        <header>
+            <h1>Gatos y perros</h1>
+            <p class="bajada">Mi primer sitio en HTML, CSS y JavaScript</p>
+            <!-- Menú: cada link lleva a una sección usando su id -->
+            <nav>
+                <a href="#gatos">Gatos</a>
+                <a href="#perros">Perros</a>
+                <a href="#votacion">¿Cuál prefieres?</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="gatos" class="tarjeta">
+                <h2>Gatos</h2>
+                <img src="https://cdn.royalcanin-weshare-online.io/fSI-PmYBaxEApS7LXAYi/v1/ec34h-tips-for-training-your-kitten-hero-cat?w=1440&fm=jpg&auto=format%2Ccompress" alt="Gatito sentado mirando a la cámara" class="foto">
+                <p>
+                    Este es un lindo gatito. Los gatos son independientes, curiosos y duermen gran parte del día.
+                </p>
+                <ol>
+                    <li>Duermen entre 12 y 16 horas al día</li>
+                    <li>Se limpian solos con la lengua</li>
+                    <li>Ronronean cuando están tranquilos</li>
+                </ol>
+                <p>
+                    <a href="https://es.wikipedia.org/wiki/Felis_catus" target="_blank">Leer más sobre los gatos</a>
+                </p>
+            </section>
+
+            <section id="perros" class="tarjeta">
+                <h2>Perros</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Golde33443.jpg" alt="Perro golden retriever sentado en el pasto" class="foto">
+                <p>
+                    Este es un perro golden retriever. Los perros son sociables, leales y les encanta jugar.
+                </p>
+                <ul>
+                    <li>Necesitan salir a pasear todos los días</li>
+                    <li>Se pueden entrenar con premios</li>
+                    <li>Hay razas de todos los tamaños</li>
+                </ul>
+                <p>
+                    <a href="https://es.wikipedia.org/wiki/Canis_familiaris" target="_blank">Leer más sobre los perros</a>
+                </p>
+            </section>
+
+            <!-- Sección con JavaScript: el usuario vota y la página cuenta los votos -->
+            <section id="votacion" class="tarjeta">
+                <h2>¿Cuál prefieres?</h2>
+                <p>Aprieta un botón para votar.</p>
+                <div class="botones">
+                    <button id="boton-gato">Gato 🐱</button>
+                    <button id="boton-perro">Perro 🐶</button>
+                </div>
+                <p id="resultado">Todavía no hay votos.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>2026 · Fernanda Diez · Narración Gráfica de No Ficción (COM-208)</p>
+        </footer>
+
+        <!-- Mi JavaScript va al final, cuando todo el HTML ya cargó -->
+        <script src="script.js"></script>
+    </body>
+
+</html>
